@@ -1,0 +1,40 @@
+{
+  "name": "kurukuru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Serori1923",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3"
+  },
+
+  "build": {
+    "appId":"com.example.kurukuru",
+    "productName": "KuruKuru(〜￣▽￣)〜",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/image/kurukuru.png"
+		},
+    "mac": {
+      "icon": "assets/image/kurukuru.png"
+      },
+    "linux": {
+      "icon": "assets/image/kurukuru.png"
+    },
+
+    "files": [
+			"**/*",   
+			"!.vscode",
+			"build/"
+		],
+		"asar": false
+  }
+}
